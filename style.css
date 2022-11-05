@@ -75,4 +75,7 @@
 }
 
 @media (max-width: 400px) {
+  .main-content {
+    background-image: url("./imagens/pexels-olga-lioncat-7245369.jpg");
+  }
 }
