@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content {
+  background-image: url("./imagens/pexels-vlado-paunovic-3038740.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex: 1 0 auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.data-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 10px;
+  width: 400px;
+  height: 500px;
+  background-color: aqua;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  background-image: url("./imagens/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tela-de-input {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  font-size: 30px;
+}
+.botoes-operacao {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 5px;
+  width: 90%;
+}
+
+.botao-chave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-style: solid;
+  border-radius: 8px;
+  font-size: 30px;
+}
+.botao-chave:hover {
+  background-color: aqua;
+}
+
+.botoes-inferiores {
+  display: grid;
+  grid-template-areas: "botao-apagar botao-igual";
+  grid-template-columns: 2fr, 1fr;
+  column-gap: 10px;
+  width: 90%;
+  height: 40px;
+}
+.botao-apagar {
+  grid-area: botao-apagar;
+}
+.botao-igual {
+  grid-area: botao-igual;
+  /* width: 40px; */
+}
+
+@media (max-width: 400px) {
+}
