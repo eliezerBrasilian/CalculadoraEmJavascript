@@ -13,8 +13,13 @@ function verificaSeInputEstaVazio() {
   return false;
 }
 function calcular() {
+  let resultado = "ERRO!";
   if (verificaSeInputEstaVazio() === false) {
-    const resultado = eval(input.value);
+    try {
+      resultado = eval(input.value);
+    } catch (error) {
+      console.log("A operação tentada não é válida");
+    }
     input.value = resultado;
   }
 }
